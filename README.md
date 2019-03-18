@@ -30,9 +30,12 @@ sudo chown git:git /home/git/gitea
 
 ### Download binary
 
-Télécharge le package gitea
-
-
+Télécharger le package gitea :
+```
+cd /home/git/gitea
+sudo wget -O gitea https://dl.gitea.io/gitea/VERSION/gitea-VERSION-linux-amd64
+sudo chmod +x gitea
+```
 
 ## Problèmes connus
 
