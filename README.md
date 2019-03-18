@@ -10,8 +10,18 @@ Il faut installer le package `git` sur le serveur.
 
 ### Database
 
-Créer une database+user coté MySQL/Mariadb (+install si inexistant)
+Installer MySQL/MariaDB si nécessaire.
 
+Créer une database :
+```
+CREATE DATABASE gitea CHARACTER SET utf8 COLLATE utf8_general_ci;
+```
+
+Créer un user coté Mariadb
+```
+CREATE USER 'gitea'@'localhost' IDENTIFIED BY 'motdepasse';
+GRANT ALL PRIVILEGES ON *.* TO 'gitea'@'localhost' IDENTIFIED BY 'motdepasse' WITH GRANT OPTION;
+```
 
 ### User Git
 
