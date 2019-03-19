@@ -44,6 +44,7 @@ Télécharger le package gitea :
 ```
 cd /home/git/gitea
 sudo wget -O gitea https://dl.gitea.io/gitea/VERSION/gitea-VERSION-linux-amd64
+sudo mv gitea* gitea
 sudo chmod +x gitea
 ```
 
