@@ -48,6 +48,10 @@ sudo mv gitea* gitea
 sudo chmod +x gitea
 ```
 
+### Install web setup
+
+http://YOUR_SERVER_IP:3000/install
+
 ## Problèmes connus
 
 >Comment uploader des fichiers de plus de 3 Mo ?
