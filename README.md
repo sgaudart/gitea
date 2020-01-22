@@ -20,7 +20,7 @@ CREATE DATABASE gitea CHARACTER SET utf8 COLLATE utf8_general_ci;
 Créer un user coté Mariadb
 ```
 CREATE USER 'gitea'@'localhost' IDENTIFIED BY 'motdepasse';
-GRANT ALL PRIVILEGES ON *.* TO 'gitea'@'localhost' IDENTIFIED BY 'motdepasse' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON gitea.* TO 'gitea'@'localhost' IDENTIFIED BY 'motdepasse' WITH GRANT OPTION;
 ```
 
 ### User Git
