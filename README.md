@@ -56,4 +56,10 @@ http://YOUR_SERVER_IP:3000/install
 
 >Comment uploader des fichiers de plus de 3 Mo ?
 
-Solution : voir fichier de `conf/app.ini` (section repository)
+Solution : voir fichier de `conf/app.ini` (section repository) et mettre la section suivante :
+```
+[repository.upload]
+ENABLED = true
+FILE_MAX_SIZE = 30
+MAX_FILES = 5
+```
