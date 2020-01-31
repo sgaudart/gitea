@@ -63,3 +63,11 @@ ENABLED = true
 FILE_MAX_SIZE = 30
 MAX_FILES = 5
 ```
+
+>Je n'ai pas le champ *Search* dans un repo, pourquoi ?
+
+Solution : voir fichier de `conf/app.ini` (section repository) et mettre la section suivante :
+```
+[indexer]
+REPO_INDEXER_ENABLED = true
+```
